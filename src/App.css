@@ -152,6 +152,34 @@ body {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 20px;
-  margin: 30px 30px 30px 30px;
+  grid-gap: 40px;
+  margin: 30px 50px 30px 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .parks-grid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.park-title-style {
+  color: #0D1620;
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.designation-style {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #0D1620;
+  font-size: 30px;
+}
+
+.park-description-style {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #0D1620;
+  font-size: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }

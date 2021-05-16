@@ -12,6 +12,9 @@ const Nav = (props) => {
             <Link style={{textDecoration: 'none', color: '#66cc00'}} to ="/allparks">
                 <h2 className={`nav-title-style ${(props.currentRoute === '/allparks' ? 'active-link' : '')}`}>All Parks</h2>
             </Link>
+            <Link style={{textDecoration: 'none', color: '#66cc00'}} to="/topics">
+                <h2 className={`nav-title-style ${(props.currentRoute === '/topics' ? 'active-link' : '')}`}>Topics</h2>
+            </Link>
         </div>
     );
 }
