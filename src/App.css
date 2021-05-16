@@ -1,9 +1,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@1&family=IM+Fell+English:ital@1&display=swap');
+
+@keyframes backgroundEffect {
+  0% {background-position: 0% 0%}
+  25% {background-position: 30% 10%}
+  50% {background-position: 0 30%}
+  75% {background-position: 30% 30%}
+  100% {background-position: 0% 0%}
+}
 
 body {
   margin: 0;
   padding: 0;
+  background: radial-gradient(circle, rgba(179,193,180,0.65) 0%, rgba(255,255,255,0.65) 50%, rgba(173,198,178,0.65) 100%), url('images/yosemite.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  /* animation: backgroundEffect 40s ease-in-out alternate; */
+  text-align: center;
 }
 
 .nav-style {
@@ -32,4 +50,45 @@ body {
   background-color: aliceblue;
   color: #0b240d;
   transition: background-color 0.5s, color 0.5s;
+}
+
+.welcome-style {
+  text-align: center;
+  margin-top: 75px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 40px;
+  color: #0D1620;
+}
+
+.parks-of-america {
+  text-align: center;
+  margin-top: 50px;
+  color: #0D1620;
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 70px;
+  font-weight: 100;
+}
+
+.intro-style {
+  font-family: 'Sorts Mill Goudy', serif;
+  color: #0D1620;
+  font-size: 30px;
+  margin: 50px 10px 0 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-weight: 500;
+}
+
+.flag-style {
+  max-width: 500px;
+  width: 80vw;
+  height: auto;
+  margin-top: 30px;
+}
+
+.all-parks-title {
+  font-family: 'IM Fell Double Pica', serif;
+  color: #0D1620;
+  font-size: 50px;
+  margin-top: 50px;
 }
