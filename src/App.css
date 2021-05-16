@@ -92,3 +92,66 @@ body {
   font-size: 50px;
   margin-top: 50px;
 }
+
+.park-card {
+  width: 400px;
+  height: 520px;
+  background-color: #0D1620;
+  border-radius: 10px;
+  border: 3px solid #008000;
+  box-shadow: 0 5px 5px black;
+  transition: transform 0.5s;
+  margin: 0 auto;
+}
+
+.park-card:hover {
+  transform: scale(1.05);
+}
+
+.card-image-style {
+  width: 100%;
+}
+
+.card-background-image {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.park-name {
+  color: aliceblue;
+  font-family: 'IM Fell Double Pica', serif;
+  font-size: 35px;
+  font-weight: 100;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.designation {
+  text-align: left;
+  color: aliceblue;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.park-states {
+  color: aliceblue;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 35px;
+  word-wrap: break-word;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.parks-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+  margin: 30px 30px 30px 30px;
+}
