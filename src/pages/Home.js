@@ -1,9 +1,15 @@
+import React, { useEffect, useState } from "react";
 import '../App.css';
 
-const Home = () => {
+const Home = (props) => {
+    
+    useEffect(() => {
+        props.grabRoute(props.match.path);
+    }, [])
+    
     return (
         <div>
-
+            <h1>Home</h1>
         </div>
     );
 }
