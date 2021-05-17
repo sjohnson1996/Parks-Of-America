@@ -30,7 +30,6 @@ const AllParks = (props) => {
                 .then(res => {
                     setPark(res.data.data[0]);
                 })
-                .then(() => console.log(park));
         }
     }, [parkClick])
 
@@ -48,7 +47,7 @@ const AllParks = (props) => {
         setParkClick(parkCode);
     }
 
-    console.log(parks.data);
+    // console.log(parks.data);
 
     return (
         <div>
@@ -80,10 +79,14 @@ const AllParks = (props) => {
                 </div>
             :
                 <div>
-                    <button onClick={() => setParkClick(null)}>Back</button>
-                    <h1 className="park-title-style">{park.fullName}</h1>
-                    <h2 className="designation-style">{park.designation}</h2>
-                    <h3 className="park-description-style">{park.description}</h3>
+                    <button onClick={() => {setParkClick(null); setPark(null)}}>Back</button>
+                    {(park) ? 
+                        <div>
+                            <h1 className="park-title-style">{park.fullName}</h1>
+                            <h2 className="designation-style">{park.designation}</h2>
+                            <h3 className="park-description-style">{park.description}</h3>
+                        </div>
+                    : null}
                 </div>
             }
             
